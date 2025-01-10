@@ -13,7 +13,8 @@ public class ReturnWordCount {
         int wordCount = 1;
         // for-each to iterate through each char in 'charAry'
         for(char ch : charAry){
-            // check if current elem is of space
+            // check if current elem is of space   
+            // Note: Could use equality operator '==' as we are dealing with a primitive type (char) --- if complex Obj type (String -- best practice to use .equals() to compare only value (not memory address)) 
             if(ch == ' '){
                 // prefix increment to count space
                 ++wordCount;
